@@ -66,7 +66,7 @@
     }
 
 
-    const updateStepCount = (webSocketPayload) => {
+    const updateStepCount = (webSocketPayload) => { 
         if(webSocketPayload.data=="startTimer"){
             startandstop();
         } else if (webSocketPayload.data.indexOf("stepCount")>-1 && runningstate ==1){
